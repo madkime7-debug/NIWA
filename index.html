@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIWA GROUP | Professional Retail & Distribution Company</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="public/asset/LOGO%20NIWA%20PRIMARY%20TRANSPARENT%2014.png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="public/asset/LOGO NIWA PRIMARY TRANSPARENT 14.png" alt="NIWA Group Logo" />
+      </a>
+      
+      <button class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li>
+          <a href="index.html">Home</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <a href="milestones.html">Milestones</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <a href="brands.html">Our Brands</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <a href="public-relations.html">Public Relations</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <a href="careers.html">Careers</a>
+          <div class="desktop-only-underline"></div>
+        </li>
+        <li>
+          <button class="contact-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h4 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        Professional Retail & Distribution
+      </h4>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+        It's Not Shopping,<br />
+        It Changes Your Life
+      </h1>
+      <div data-aos="fade-up" data-aos-delay="800">
+        <a href="about.html" class="hero-btn" style="text-decoration: none;">
+          Discover More
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purpose Section -->
+  <section id="about-us">
+    <div class="container purpose-wrapper">
+      <div class="purpose-img-col" data-aos="fade-right">
+        <div class="purpose-img-container">
+          <img src="public/asset/kantor-pt-niaga-warna-persada.jpg" alt="NIWA Corporate Building" style="width:100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" />
+        </div>
+      </div>
+      <div class="purpose-text-col" data-aos="fade-left">
+        <h2 class="purpose-title">Our Purpose</h2>
+        <p class="purpose-desc">
+          Niaga Warna Persada (NIWA Group) was established in 2010, originally specializing in the beauty products. Today, NIWA Group is Indonesia’s professional distribution company with many international brand portfolio across various categories, from beauty, fashion and homeware. Its portfolio comprises internationally renowned brands from around the world.
+        </p>
+        <p class="purpose-desc">
+         Bringing world-class brands to Indonesia that offer compelling and best shopping experiences is the hallmark of the group, and it will continue to bring the most desirable international brands and cutting edge concepts to Indonesia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi Misi Section -->
+  <section id="visi-misi">
+    <div class="container">
+      <div class="vision-mission-cards">
+        <div class="vm-card" data-aos="fade-up">
+          <div class="vm-icon"><i data-lucide="eye"></i></div>
+          <h3 class="vm-title">Visi</h3>
+          <p class="vm-desc">It's Not Shopping,<br/>It Changes Your Life</p>
+        </div>
+
+        <div class="vm-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="vm-icon"><i data-lucide="target"></i></div>
+          <h3 class="vm-title">Misi</h3>
+          <p class="vm-desc">Providing Best Quality<br/>Products To Indonesia Market</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tabs Section -->
+  <section id="what-we-do">
+    <div class="container">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="tab-brands">
+          <div class="tab-icon-box"><i data-lucide="star"></i></div>
+          <span>BRANDS</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-b2b">
+          <div class="tab-icon-box"><i data-lucide="briefcase"></i></div>
+          <span>B2B</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-b2c">
+          <div class="tab-icon-box"><i data-lucide="handshake"></i></div>
+          <span>B2C</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-ecommerce">
+          <div class="tab-icon-box"><i data-lucide="shopping-cart"></i></div>
+          <span>ECOMMERCE</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="tab-content-area" style="background-color: var(--dark-blue); padding-top: 30px; padding-bottom: 60px;">
+    <div class="container">
+      
+      <!-- Brands Tab -->
+      <div class="tab-pane active" id="tab-brands">
+        <div class="brand-carousel-container" data-aos="fade-up">
+          <button class="carousel-nav-btn prev-btn" id="prevBrand"><i data-lucide="chevron-left"></i></button>
+          <div class="brand-carousel-track" id="brandTrack">
+            <a href="https://shopee.co.id/2080_indonesia?entryPoint=ShopBySearch&searchKeyword=2080" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/2080.png" alt="Brand 1"></a>
+            <a href="https://shopee.co.id/lagirlindonesia?entryPoint=ShopBySearch&searchKeyword=la%20girl" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/la girl.png" alt="Brand 2"></a>
+            <a href="https://shopee.co.id/thewetbrushindonesia?entryPoint=ShopBySearch&searchKeyword=wet%20brush" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/wetbrush.png" alt="Brand 3"></a>
+            <a href="https://shopee.co.id/moodmatcherindonesia?entryPoint=ShopBySearch&searchKeyword=moodmatcher" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/moodmatcher.png" alt="Brand 4"></a>
+            <a href="https://shopee.co.id/acnocindonesia?entryPoint=ShopBySearch&searchKeyword=acnoc" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/acnoc.png" alt="Brand 5"></a>
+            <a href="https://shopee.co.id/lacolorsindonesia?entryPoint=ShopBySearch&searchKeyword=la%20colors" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/la colors.png" alt="Brand 6"></a>
+            <a href="https://shopee.co.id/ecoco_indonesia?entryPoint=ShopBySearch&searchKeyword=ecoco" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/ecoco.png" alt="Brand 7"></a>
+            <a href="https://shopee.co.id/silicookindonesia?entryPoint=ShopBySearch&searchKeyword=silicook" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/silicook.png" alt="Brand 8"></a>
+            <a href="https://shopee.co.id/dankeindonesia?entryPoint=ShopBySearch&searchKeyword=danke" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/danke.png" alt="Brand 9"></a>
+            <a href="https://shopee.co.id/ohoraindonesia?entryPoint=ShopBySearch&searchKeyword=ohora" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/ohora.png" alt="Brand 10"></a>
+            <a href="https://shopee.co.id/silipotindonesia?entryPoint=ShopBySearch&searchKeyword=silipot" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/silipot.png" alt="Brand 11"></a>
+            <a href="https://shopee.co.id/jbabeindonesia?entryPoint=ShopBySearch&searchKeyword=jbabe" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/jbabe.png" alt="Brand 12"></a>
+            <a href="https://shopee.co.id/onnaisindonesia?entryPoint=ShopBySearch&searchKeyword=onnais" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/onnais.png" alt="Brand 13"></a>
+            <a href="https://shopee.co.id/monsta.indonesia?entryPoint=ShopBySearch&searchKeyword=monsta" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/monsta.png" alt="Brand 14"></a>
+            <a href="https://shopee.co.id/dalinindonesia?entryPoint=ShopBySearch&searchKeyword=dalin" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/dalin.png" alt="Brand 15"></a>
+            <a href="https://shopee.co.id/dailyperfection?entryPoint=ShopBySearch&searchKeyword=daily%20perfection" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/dp.png" alt="Brand 16"></a>
+            <a href="https://shopee.co.id/2p_indonesia?entryPoint=ShopBySearch&searchKeyword=2p%20original" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/2p.png" alt="Brand 17"></a>
+            <a href="https://shopee.co.id/ubrasindonesia?entryPoint=ShopBySearch&searchKeyword=ubras" target="_blank" class="brand-carousel-card"><img src="public/asset/banner/ubras.jpg" alt="Brand 18"></a>
+          </div>
+          <button class="carousel-nav-btn next-btn" id="nextBrand"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- B2B Tab -->
+      <div class="tab-pane" id="tab-b2b">
+        <div class="masonry-layout">
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/B2B/KKV.jpg');">
+               <div class="grid-overlay">
+                 <img src="public/asset/logo/KKVF.webp" alt="Brand Logo" class="brand-logo">
+                 <p>Available in O! SOME (previously KKV) as a young consumer oriented retail store, partnering with KKV to deliver the goods on offline channels.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/B2B/the-foodhall-featured-2.jpeg');">
+               <div class="grid-overlay">
+                 <img src="public/asset/logo/FOOD.jpg" alt="Brand Logo" class="brand-logo">
+                 <p>Partnering with The FoodHall, a premium supermarket to deliver the goods on offline channels.</p>
+               </div>
+             </div>
+           </div>
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/B2B/pap\ guardian.jpg');">
+               <div class="grid-overlay">
+                 <img src="public/asset/logo/GUARDIAN.jpg" alt="Brand Logo" class="brand-logo">
+                 <p>Partnering with Guardian, a health and beauty retailer to deliver the goods on offline channels.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/B2B/Periplus\ Bookshop\ Puri\ Indah\ Mall.jpg');">
+               <div class="grid-overlay">
+                 <img src="public/asset/logo/PERIPLUS.jpg" alt="Brand Logo" class="brand-logo">
+                 <p>Partnering with Periplus, a bookstore chain for book lovers and travelers to deliver travel and lifestyle segments on offline channels.</p>
+               </div>
+             </div>
+             <div class="grid-item cta-card">
+               <h3>WORK TO BE PROUD OF</h3>
+               <a href="#" class="cta-link">Explore More <i data-lucide="arrow-right-circle"></i></a>
+             </div>
+           </div>
+        </div>
+      </div>
+
+      <!-- B2C Tab -->
+      <div class="tab-pane" id="tab-b2c">
+        <div class="masonry-layout">
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/B2C/EXH.jpg');">
+               <div class="grid-overlay">
+                 <h3>Exhibition & Events</h3>
+                 <p>We are showcasing through exhibitions to ensure that consumers can better understand our products With responsive customer service.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/B2C/TRADE.jpg');">
+               <div class="grid-overlay">
+                 <h3>Trade-In & Promotions</h3>
+                 <p>To drive customer loyalty and  reduce the environmental impact by offering customers the opportunity to trade in their old products for discounts on new ones.</p>
+               </div>
+             </div>
+           </div>
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/B2C/SM.jpg');">
+               <div class="grid-overlay">
+                 <h3>Social Media</h3>
+                 <p>Presenting brands in order to remain close to customers, stay relevant to current trends and improve innovation.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/B2C/CS.jpg');">
+               <div class="grid-overlay">
+                 <h3>Costumer Care</h3>
+                 <p>Guarantee for product satisfaction, we provide a dedicated customer care line to manage our customers’ feedback.</p>
+               </div>
+             </div>
+             <div class="grid-item cta-card">
+               <h3>WORK TO BE PROUD OF</h3>
+               <a href="#" class="cta-link">Explore More <i data-lucide="arrow-right-circle"></i></a>
+             </div>
+           </div>
+        </div>
+      </div>
+
+      <!-- ECOMMERCE Tab -->
+      <div class="tab-pane" id="tab-ecommerce">
+        <div class="masonry-layout">
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/ECOMERCE/shoope.jpg');">
+               <div class="grid-overlay">
+
+                 <p>Shopee with its large customer base to deliver the wide range of our products on online channels.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/ECOMERCE/ts.jpg');">
+               <div class="grid-overlay">
+
+                 <p>TikTok Shop is a social-commerce that is popular among younger generations with interactive integration to deliver the wide range of our products on online channels.</p>
+               </div>
+             </div>
+           </div>
+           <div class="masonry-col">
+             <div class="grid-item" style="background-image: url('public/asset/ECOMERCE/tokped.jpg');">
+               <div class="grid-overlay">
+
+                 <p>Tokopedia is a popular Indonesian e-commerce platform to deliver the wide range of our products on online channels.</p>
+               </div>
+             </div>
+             <div class="grid-item" style="background-image: url('public/asset/ECOMERCE/blibli.jpg');">
+               <div class="grid-overlay">
+
+                 <p>Blibli is a popular Indonesian e-commerce platform to deliver the wide range of our products on online channels.</p>
+               </div>
+             </div>
+             <div class="grid-item cta-card">
+               <h3>WORK TO BE PROUD OF</h3>
+               <a href="#" class="cta-link">Explore More <i data-lucide="arrow-right-circle"></i></a>
+             </div>
+           </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <footer id="contact">
+    <section class="cta-section" id="interactive-vision" style="background: var(--white); color: var(--text-dark); padding: 40px 0 0 0; text-align: center;">
+      <h2 class="cta-title" style="color: var(--primary-blue); font-size: 1.5rem; font-family: var(--font-sans); font-weight: 500;">Meet Every Consumer Need</h2>
+      <p class="cta-desc" style="color: #666; font-size: 0.8rem; margin-bottom: 20px;">
+        Not only through shopping experience but we provide products to make consumer live better
+      </p>
+
+      <div class="interactive-container bg-1" id="interactive-container">
+        <div class="vision-col" data-bg="bg-1">
+          <h5 class="col-subtitle">CORPORATE VISION</h5>
+          <h3 class="col-title">It's not Shopping, It Changes Your Life</h3>
+          <div class="col-number">1</div>
+        </div>
+        <div class="vision-col" data-bg="bg-2">
+          <h5 class="col-subtitle">MISSION</h5>
+          <h3 class="col-title">Providing Best Quality Products to Indonesia market</h3>
+          <div class="col-number">2</div>
+        </div>
+        <div class="vision-col" data-bg="bg-3">
+          <h5 class="col-subtitle">CORE VALUES</h5>
+          <h3 class="col-title">Innovation, commitment, improvement</h3>
+          <div class="col-number">3</div>
+        </div>
+      </div>
+      <div style="background-color: var(--dark-blue); padding: 80px 0 40px 0; margin-top: 40px;">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <img 
+            src="public/asset/LOGO NIWA PRIMARY TRANSPARENT 14.png" 
+            alt="NIWA Group" 
+            style="height: 55px; margin-bottom: 20px; filter: brightness(0) invert(1);" 
+          />
+          <p style="margin-bottom: 15px;"><a href="https://maps.app.goo.gl/V5AoomAiBVommL926?g_st=ac" target="_blank" style="transition: opacity 0.3s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">West Area (Jakarta)</a></p>
+          <p><a href="https://maps.app.goo.gl/mrYaotQiQYG7z7xPA?g_st=ac" target="_blank" style="transition: opacity 0.3s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">East Area (Yogyakarta)</a></p>
+        </div>
+        <div class="footer-links-col">
+          <h4 style="color: var(--white); margin-bottom: 20px; font-family: var(--font-sans);">LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="milestones.html">Milestones</a></li>
+            <li><a href="brands.html">Our Brands</a></li>
+            <li><a href="public-relations.html">Public Relations</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h4 style="color: var(--white); margin-bottom: 20px; font-family: var(--font-sans);">FOLLOW US</h4>
+          <div class="footer-social-icons" style="display: flex; gap: 20px;">
+            <a href="https://x.com/niwagroup" target="_blank" style="color: var(--white); transition: opacity 0.3s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="https://www.instagram.com/niwa.indonesia" target="_blank" style="color: var(--white); transition: opacity 0.3s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-slogan-col">
+          <h2 style="color: var(--white); font-family: var(--font-serif); font-size: 1.8rem; line-height: 1.3;">It's Not Shopping,<br/>It Changes Your Life</h2>
+        </div>
+      </div>
+      <div class="container" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 20px;">
+        <p style="color: #888; font-size: 0.9rem;">&copy; 2026 NIWA Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+  <script>
+    // Brand Carousel Auto-scroll Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const brandTrack = document.getElementById('brandTrack');
+      const nextBrand = document.getElementById('nextBrand');
+      const prevBrand = document.getElementById('prevBrand');
+      
+      if (brandTrack && nextBrand && prevBrand) {
+        const getScrollAmount = () => {
+          const card = brandTrack.querySelector('.brand-carousel-card');
+          return card ? (card.offsetWidth + 20) : 300;
+        };
+
+        const moveNext = () => {
+          // Check if reached the end (allowing 5px threshold for rounding errors)
+          if (brandTrack.scrollLeft + brandTrack.clientWidth >= brandTrack.scrollWidth - 5) {
+            brandTrack.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            brandTrack.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+          }
+        };
+
+        const movePrev = () => {
+          if (brandTrack.scrollLeft <= 5) {
+            brandTrack.scrollTo({ left: brandTrack.scrollWidth, behavior: 'smooth' });
+          } else {
+            brandTrack.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+          }
+        };
+
+        nextBrand.addEventListener('click', moveNext);
+        prevBrand.addEventListener('click', movePrev);
+
+        let autoScroll = setInterval(moveNext, 3000);
+        
+        const container = document.querySelector('.brand-carousel-container');
+        container.addEventListener('mouseenter', () => clearInterval(autoScroll));
+        container.addEventListener('mouseleave', () => {
+          autoScroll = setInterval(moveNext, 3000);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
