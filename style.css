@@ -169,7 +169,7 @@ img {
 /* --- Hero --- */
 #home {
   min-height: 100vh;
-  background-image: url('public/asset/background.png');
+  background-image: url('assets/asset/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -409,7 +409,7 @@ img {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('public/asset/background.png') center/cover;
+  background: url('assets/asset/background.png') center/cover;
   opacity: 0.05;
   z-index: -1;
   transition: opacity 0.4s ease, transform 0.5s ease;
@@ -621,13 +621,13 @@ img {
   transition: background-image 0.6s ease-in-out;
 }
 .interactive-container.bg-1 {
-  background-image: url('public/asset/bg_1.png');
+  background-image: url('assets/asset/bg_1.png');
 }
 .interactive-container.bg-2 {
-  background-image: url('public/asset/bg_2.png');
+  background-image: url('assets/asset/bg_2.png');
 }
 .interactive-container.bg-3 {
-  background-image: url('public/asset/bg_3.png');
+  background-image: url('assets/asset/bg_3.png');
 }
 .vision-col {
   flex: 1;
@@ -834,7 +834,7 @@ footer {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('public/asset/background.png') center/cover;
+  background: url('assets/asset/background.png') center/cover;
   opacity: 0.15;
   z-index: 1;
 }
@@ -916,7 +916,7 @@ footer {
 /* --- Contact Form --- */
 .contact-section {
   padding: 80px 0;
-  background: url('public/asset/bg_3.png') center/cover;
+  background: url('assets/asset/bg_3.png') center/cover;
   position: relative;
 }
 .contact-section::before {
